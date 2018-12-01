@@ -1,0 +1,131 @@
+.contact-us-sec{
+    background:url("/assets/img/banner-img.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    padding:8em 1em;
+    background-attachment: fixed;
+}
+.page-title{
+    h3{
+        font-size: 2.5em;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 5px;
+    }
+    p{
+        font-size: 1.1em;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 0px;
+    }
+}
+.support-container-sec{
+    padding:6em 1em;
+    text-align: center;
+    h3{
+        font-size: 3em;
+        font-weight: 400;
+        margin-bottom: 0.3em;
+    }
+    p{
+        color: #838383;
+        font-size: 1em;
+        line-height: 2em;
+        margin-bottom: 4em;
+    }
+    .support-sec{
+        text-align: center;
+        border: 1px solid #e8e8e8;
+        padding: 2em;
+        margin-top: 2em;
+        .icon-sec{
+            height: 67px;
+            width: 67px;
+            line-height: 4em;
+            border-radius: 50%;
+            color: #fff;
+            margin: -4.3em auto 2em auto;
+            background: #13a1c5;
+            img{
+                width:30px;
+            }
+        }
+        h3{
+            margin: 0 0 15px 0;
+            line-height: 1;
+            font-size: 1.1em;
+            font-weight: 500;
+            color: #13a1c5
+        }
+        p{
+            font-size: 0.75em;
+            line-height: 2.5em;
+            color: #747474;
+            font-weight: 400;
+            margin-bottom: 1em;
+        }
+    }
+}
+.google-map-sec{
+  height: 350px;
+  padding: 0px;
+}
+agm-map {
+    height: 100%;
+}
+.contact-form-sec{
+    h3{
+        font-size: 1em;
+    }
+    padding:5em 1em;
+    label{
+        font-weight: 500;
+    }
+    input:focus{
+        box-shadow: 0 1px 0 0 #13a1c5;
+        border-bottom: 1px solid #13a1c5;
+        .md-form label{
+            color:#13a1c5;
+        }
+    }
+    textarea:focus{
+        box-shadow: 0 1px 0 0 #13a1c5;
+        border-bottom: 1px solid #13a1c5;
+    }
+    .contact-us-btn{
+        padding-top: 1em;
+        button{
+            padding: 1em 2.5em;
+            border-radius: 30px;
+            font-weight: 600;
+            background: #13a1c5 !important;
+        }
+    }
+}
+.md-form input[type=text]:focus:not([readonly]) + label, .md-form input[type=password]:focus:not([readonly]) + label, .md-form input[type=email]:focus:not([readonly]) + label, .md-form input[type=url]:focus:not([readonly]) + label, .md-form input[type=time]:focus:not([readonly]) + label, .md-form input[type=date]:focus:not([readonly]) + label, .md-form input[type=datetime-local]:focus:not([readonly]) + label, .md-form input[type=tel]:focus:not([readonly]) + label, .md-form input[type=number]:focus:not([readonly]) + label, .md-form input[type=search-md]:focus:not([readonly]) + label, .md-form input[type=search]:focus:not([readonly]) + label, .md-form textarea.md-textarea:focus:not([readonly]) + label{
+    color:#13a1c5;
+}
+
+
+/****************Responsive*******************/
+
+@media screen and (max-width: 991px){
+    .support-container-sec{
+        padding:5em 1em;
+        padding-bottom: 4em;
+        .always-here-sec{
+            h3{
+                font-size: 2em;
+            }
+            p{
+                font-size: 0.8em;
+            }
+        }
+        .support-sec{
+            margin-bottom: 2em;
+        }
+    }
+    .contact-form-sec{
+        padding: 4em 1em;
+    }
+}

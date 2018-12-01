@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/scss/bootstrap";
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i');
+
+
+h1,h2,h3,h4,h5,h6,div,span,a,ul,li,p{
+    margin: 0px;
+    padding: 0px;
+}
+ol, ul {
+	list-style: none;
+}
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+$background : #01b7f2;
+
+.iifr{
+  display: none;
+}
+.ng-star-inserted{
+  clear: both;
+}
+.footer-social-icn .mat-button-wrapper{
+  display: inline-block;
+}
+.menu-sec .navbar-nav li a:hover .mat-button-focus-overlay{
+  position: relative;
+}
+
+
+@media screen and (max-width: 767px){
+  .menu-sec .navbar-toggler{
+      background: #13a1c5;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      padding: 0px;
+      box-shadow: 0px 1px 3px #949494;
+      font-size: 1em;
+      .navbar-toggler-icon{
+          width:27px;
+      }
+  }
+  
+}
+

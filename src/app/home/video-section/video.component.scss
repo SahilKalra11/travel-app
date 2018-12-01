@@ -1,0 +1,36 @@
+.video-sec{
+    background: url("/assets/img/video-sec-img.jpg") no-repeat center center / cover;
+    padding: 7em 1em;
+    background-attachment: fixed;
+    .video-content-sec{
+        .video-icn-sec{
+            background: transparent;
+            display: inline-block;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            border: 2px solid #fff;
+            box-shadow: 0px 1px 32px 0px #d0d0d0;
+            padding-top: 0.56em;
+            margin-bottom: 2em;
+            i{
+                color: #fff;
+                margin: auto;
+                text-align: center;
+                font-size: 2.5em;
+            }
+        }
+        h3{
+            font-size: 2em;
+            color: #fff;
+            line-height: 1.5em;
+            font-weight: 600;
+            margin-bottom: 1em;
+        }
+        p{
+            color:#fff;
+            font-weight: 400;
+            font-size: 0.85em;
+        }
+    }
+}

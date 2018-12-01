@@ -1,0 +1,174 @@
+
+.footer-sec{
+    //background:url("/assets/img/google-map-img.jpg");
+    //background: #13a1c5;
+    background: rgb(49, 49, 49) none repeat scroll 0 0;
+    padding:4em 1em;
+    padding-bottom: 3em;
+    .footer-heading{
+        color:#fff;
+        font-size: 1.3em;
+        font-weight: 600;
+        margin-bottom: 1.5em;
+    }
+    .footer-contact-sec{
+        p{
+            color: #fff;
+            font-size: 0.75em;
+            font-weight: 500;  
+            margin-bottom: 2.5em;
+        }
+        .contact-mail-sec{
+            clear: both;
+            margin-bottom: 1.5em;
+            img{
+                float: left;
+                width:20px;
+            }
+            p{
+                display: table-cell;
+                padding-left: 1em;
+            }
+        }
+    }
+    .recent-news-sec{
+        ul li{
+            h4{
+                font-size: 0.85em;
+                color: #fff;
+                font-weight: 500;
+                letter-spacing: 0.2px;
+            }
+            p{
+                color: #fff;
+                font-size: 0.8em;
+                font-weight: 500;
+            }
+        }
+    }
+    .link-sec{
+        ul li{
+            color: #fff;
+            font-size: 0.87em;
+            margin-bottom: 1.5em;
+            font-weight: 500;
+            a{
+                color:#fff;
+                i{
+                    padding-right: 0.5em;
+                }
+            }
+        }
+    }
+    .mailing-list-sec{
+        p{
+            color: #fff;
+            font-size: 0.85em;
+            font-weight: 500;
+            line-height: 1.5em;
+        }
+        input{
+            background: rgb(74, 74, 74) none repeat scroll 0 0;
+            border: 0 none;
+            color: rgb(255, 255, 255);
+            font-size: 12px;
+            height: 37px;
+            margin-top: 10px;
+            padding: 10px 5px 10px 20px;
+            border-radius: 0px;
+        }
+        .btn{
+            padding: 0px;
+            background: #13a1c5;
+            margin: 0px;
+            height: 37px;
+            position: relative;
+            top: 10px;
+            border: 0 none;
+            color: rgb(255, 255, 255);
+            font-size: 12px;
+            height: 37px;
+            text-transform: uppercase;
+            width: 70px;
+        }
+        .footer-social-icn{
+            ul{
+                margin-top: 3em;
+                display: inline-block;
+                li{
+                    float: left;
+                    text-align: center;
+                    a{
+                        color: #fff;
+                        border: 1px solid #13a1c5;
+                        font-size: 1em;
+                        width: 35px;
+                        height: 35px;
+                        min-width: auto;                       
+                        margin: 0px 5px;
+                        border-radius: 0px;
+                        text-align: center;
+                        padding: 0px;
+                        display: block;
+                        &:hover{
+                            background: #13a1c5;
+                            color: #fff;
+                            border: 1px solid #118dad;
+                        }                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/***********Responsive****************/
+
+@media screen and (max-width: 1200px) {
+    .footer-sec{
+        .footer-heading{
+            font-size: 1.1em;
+        }
+        .link-sec{
+            ul li{
+                font-size: 0.8em;
+            }
+        }
+        .mailing-list-sec{
+            .input-group{
+                input{
+                    padding-left:10px;
+                }
+            }
+        }
+        .footer-social-icn{
+            ul{
+               li a{
+                    margin: 0px 3px!important;
+               } 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .footer-contact-sec , .recent-news-sec{
+        margin-bottom: 3em;
+    }
+    .footer-sec .footer-social-icn{
+        ul{
+           li a{
+                margin: 0px 6px!important;
+           } 
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .footer-sec{
+        .link-sec{
+            margin-bottom: 3em;
+        }
+    }
+}

@@ -1,0 +1,273 @@
+
+.clinet-container-sec{
+    padding: 6em 1em;
+    background: url(/assets/img/client-sec-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    .traveller-choise-sec{
+        h3{
+            font-size: 2.2em;
+            span{
+                color: #13a1c5;
+                font-weight: 600;
+            }
+        }
+        p{
+            margin-bottom: 5px;
+            color: #838383;
+            font-size: 0.89em;
+            font-weight: 500;
+        }
+        .desti-row{
+            margin: 0px;
+            padding: 2.5em 0px 0em 0em;
+            .col-md-6{
+                padding: 0px;
+            }
+        }
+        .destination-sec{
+            display: inline-block;
+            img{
+                float: left;
+                border-radius: 50%;
+            }
+            .desti-content-sec{
+                display: table-cell;
+                padding-left: 1.5em;
+                h3{
+                    font-size: 0.9em;
+                    font-weight: 600;
+                    margin-bottom: 0.3em;
+                }
+                ul{
+                    margin-bottom: 2.2em;
+                }
+                ul li{
+                    float: left;
+                    margin-right: 0.2em;
+                    font-size: 0.9em;
+                    color: #f6ab09;
+                }
+                a{
+                    font-size: 0.8em;
+                    font-weight: 600;
+                    color: #13a1c5;
+                }
+            }
+        }
+    }
+    .testimonial-sec{
+        h3{
+            font-size: 2.2em;
+            span{
+                color: #13a1c5;
+                font-weight: 600;
+            }
+        }
+        p{
+            margin-bottom: 5px;
+            color: #838383;
+            font-size: 0.89em;
+            font-weight: 500;
+        }
+        .client-img-sec{
+            text-align: center;
+            img{
+                max-width:85px;
+                width:100%;
+                margin-bottom: 1em;
+            }
+            ul{
+                margin: auto;
+                display: inline-block;
+            }
+            ul li{
+                float: left;
+                margin-right: 0.2em;
+                font-size: 0.9em;
+                color: #f6ab09;
+            }
+        }
+        .client-review-sec{
+            h3{
+                color: #13a1c5;
+                font-weight: 600;
+                font-size: 1.1em;
+            }
+            p{
+                font-size: 0.8em;
+                font-weight: 500;
+                letter-spacing: 0.2px;
+                line-height: 1.5em;
+            }
+        }
+        .c-row{
+            margin: 0px;
+            padding: 2.5em 0px 0em 0em;
+            .col-md-6{
+                padding: 0px;
+            }
+        }
+    }
+}
+
+/********Responsive********/
+
+@media screen and (max-width: 1200px) {
+    .clinet-container-sec{
+        .traveller-choise-sec{
+            h3{
+                font-size: 1.85em;
+            }
+        }
+        .testimonial-sec{
+            h3{
+                font-size: 1.85em;
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .clinet-container-sec{
+        .testimonial-sec{
+            padding-top: 3em;
+        }
+    }
+}
+
+@mixin hSize {
+    h3{
+        font-size: 1.7em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .clinet-container-sec{
+        padding: 5em 1em;
+        .traveller-choise-sec{
+            @include hSize;
+        }
+        .testimonial-sec{
+            @include hSize;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+   .clinet-container-sec{
+        padding: 4em 1em;
+        .traveller-choise-sec{
+            h3{
+                font-size: 1.3em;
+            }
+            p{
+                font-size: 0.75em;
+            }
+        }
+        .desti-row {
+            .destination-sec{
+                img{
+                    width:60px;
+                }
+                .desti-content-sec{
+                    padding-left: 0.7em;
+                    h3{
+                        font-size:0.74em;
+                    }
+                    ul{
+                        margin-bottom: 1.5em;
+                        li{
+                            font-size: 0.7em;
+                        }
+                    }
+                    a{
+                        font-size: 0.7em;
+                    }
+                }
+            }
+        }  
+        .testimonial-sec{
+            h3{
+                font-size: 1.3em;
+            }
+            p{
+                font-size: 0.75em;
+            }
+            .client-img-sec{
+                ul li{
+                    font-size: 0.8em;
+                }
+            }
+            .client-review-sec{
+                h3{
+                    font-size: 1em;
+                }
+                p{
+                    line-height: 1.7em;
+                    font-size: 0.7em;
+                }
+            }
+        }  
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    .clinet-container-sec{
+        .traveller-choise-sec{
+            .desti-row{
+                padding-top: 0px;
+                .col-6{
+                    max-width: 100%;
+                    flex:100%;
+                    margin-top: 2em;  
+                    .destination-sec{
+                        img{
+                            width:75px;
+                        }
+                        .desti-content-sec{
+                            padding-left: 1.5em;
+                            h3{
+                                font-size: 0.9em;
+                            }
+                            ul{
+                                margin-bottom: 1.8em;
+                                li{
+                                    font-size: 0.75em;
+                                }
+                            }
+                            a{
+                                font-size: 0.78em;
+                            }
+                        }
+                    }                  
+                }
+            }
+        }
+        .testimonial-sec{
+            .c-row{
+                .col-4{
+                    padding: 0em;
+                    .client-img-sec{
+                        img{
+                            float: none;    
+                            max-width: 70px;                        
+                        }
+                    }
+                }
+                .col-8{
+                    padding: 0em 0.5em;
+                    .client-review-sec{
+                        h3{
+                            font-size: 0.8em;
+                        }
+                        p{
+                            line-height: 1.7em;
+                            font-size: 0.65em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

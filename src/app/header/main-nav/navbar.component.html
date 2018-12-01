@@ -1,0 +1,20 @@
+<div class="h-100 menu-sec">
+    <mdb-navbar SideClass="navbar navbar-expand-md navbar-dark" [containerInside]="true">
+        <mdb-navbar-brand>
+            <a class="navbar-brand logo-sec" [routerLink]="['/home']"> <img src="/assets/img/logo2.png" class="img-fluid" /></a>
+        </mdb-navbar-brand>
+        <links>
+            <ul class="navbar-nav mr-auto" routerLinkActive="active" >
+                <li class="nav-item active waves-light" >
+                    <a class="nav-link" [routerLink]="['/home']" mat-button >Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item waves-light">
+                    <a class="nav-link" [routerLink]="['/aboutus']" mat-button>About Us</a>
+                </li>
+                <li class="nav-item waves-light">
+                    <a class="nav-link" [routerLink]="['/contactus']" mat-button>Contact Us</a>
+                </li>
+            </ul>
+        </links>
+    </mdb-navbar>
+  </div>
